@@ -1,0 +1,31 @@
+// a code to prompt user to enter and display
+/*
+NAME:Mark Kiruhi
+REG NO:PA106\G\28727\25
+DESCRIPTION:A code to prompt user to enter personal details
+*/
+#include <stdio.h>
+int main() {
+    long long id_number;
+    float height, bank_balance;
+    char github_account[50], personal_email[50];
+
+    printf("enter your height:");
+    scanf("%f", &height);
+    printf("enter your id number:");
+    scanf("%lld", &id_number);
+    printf("enter your bank balance: ");
+    scanf("%f", &bank_balance);
+    printf("enter your github account: ");
+    scanf("%s", &github_account);
+    printf("enter your personal email: ");
+    scanf("%s", &personal_email);
+    printf("**YOUR INFORMATION** \n");
+    printf(">your height is %f\n", height);
+    printf(">your id number is %lld\n", id_number);
+    printf(">your bank balance is %f\n", bank_balance);
+    printf(">your github account is %49s\n", github_account);
+    printf(">your personal email is %49s\n", personal_email);
+
+    return 0;
+}
